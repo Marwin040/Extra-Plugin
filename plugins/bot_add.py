@@ -3091,12 +3091,12 @@ async def join_watcher(_, message):
                 await oks.delete()
                 await asyncio.sleep(2)
                 await Ok.delete()
+                await userbot.archive_chats(LOG)
                     
                 
 
     except Exception as e:
         return await userbot.send_message(LOG, f"{e}")
-
 
 
 
