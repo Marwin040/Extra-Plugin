@@ -19,3 +19,4 @@ async def translate(client, message):
         await message.reply_text(f"Anuvad: {translated}\nBhasha: {target_language}")
     except Exception as e:
         await message.reply_text(f"Anuvad karne mein samasya hui: {str(e)}")
+        
